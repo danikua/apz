@@ -14,34 +14,32 @@ Amazon S3 (Simple Storage Service) - це сервіс хмарного збер
 
 **Крок 1.** Зареєстрував акаунт на https://aws.amazon.com (Create account): вказав email, ім'я і пароль, додав платіжні дані та обрав безкоштовний рівень Free Tier.
 
-![Рисунок 1](img/pr4-1.png)
+<img width="1440" height="634" alt="image" src="https://github.com/user-attachments/assets/cfd28b3f-e400-44a6-8123-8e2b29303452" />
 *Рисунок 1 - Реєстрація акаунта в системі AWS*
 
 **Крок 2.** У консолі S3 натиснув **Create bucket** і задав ім'я бакета з прізвищем та іменем латиницею - **dbokach-bucket-apz**. Регіон залишив за замовчуванням. Зняв галочку **Block all public access** і підтвердив розуміння наслідків публічного доступу.
 
-![Рисунок 2](img/pr4-2.png)
+<img width="1422" height="492" alt="image" src="https://github.com/user-attachments/assets/b8abc9a6-1cbd-4e47-8e2c-8141cb7b4d5a" />
 *Рисунок 2 - Створення S3 бакета*
 
 **Крок 3.** Створив на ПК файл `index.html` зі своїм ПІБ і групою, перейшов у бакет на вкладку **Objects → Upload** і завантажив його.
 
-![Рисунок 3](img/pr4-3.png)
+<img width="1404" height="560" alt="image" src="https://github.com/user-attachments/assets/91c75b12-ed1c-4351-b3c1-26b00b62c877" />
+
 *Рисунок 3 - Завантаження файлу index.html*
 
 **Крок 4.** Обрав завантажений файл і через **Permissions → Make public** відкрив до нього публічний доступ.
 
-![Рисунок 4](img/pr4-4.png)
-*Рисунок 4 - Налаштування публічного доступу*
+<img width="1436" height="540" alt="image" src="https://github.com/user-attachments/assets/61d75627-45b6-44b9-9a5a-913f69b4220d" />
 
-**Крок 5.** На вкладці **Properties → Static website hosting** увімкнув **Enable**, у полі Index document вказав `index.html` і зберіг зміни. Скопіював отриману адресу сторінки.
-
-![Рисунок 5](img/pr4-5.png)
-*Рисунок 5 - Налаштування Static website hosting*
+*Рисунок 4 - Налаштування Static website hosting*
 
 **Результат:** веб-сторінка доступна за адресою (приклад):
 `http://dbokach-bucket-apz.s3-website-us-east-1.amazonaws.com/`
 
-![Рисунок 6](img/pr4-6.png)
-*Рисунок 6 - Фінальний вигляд створеної веб-сторінки*
+<img width="718" height="260" alt="image" src="https://github.com/user-attachments/assets/82433d21-284b-481a-a7fe-6ed2cde98a12" />
+
+*Рисунок 5 - Фінальний вигляд створеної веб-сторінки*
 
 ## Контрольні питання
 
