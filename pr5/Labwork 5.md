@@ -14,40 +14,46 @@ AWS EC2 (Elastic Compute Cloud) - це сервіс Amazon, що надає ві
 
 **Крок 1.** У наявному акаунті AWS відкрив сервіс **EC2 → Launch an instance**, задав ім'я і обрав образ **Windows Server** (AMI).
 
-![Рисунок 1](img/pr5-1.png)
+<img width="1018" height="594" alt="image" src="https://github.com/user-attachments/assets/7d41bdf9-b5a9-438d-bd3f-f802484abea3" />
+
 *Рисунок 1 - Створення екземпляра (Instance) віртуальної машини*
 
 **Крок 2.** Створив пару ключів (**key pair**) у форматі `.pem` і зберіг файл у безпечному місці - він потрібен для отримання пароля.
 
-![Рисунок 2](img/pr5-2.png)
+<img width="832" height="104" alt="image" src="https://github.com/user-attachments/assets/c2ce82b7-839a-4b12-ad9d-662628d04534" />
+
 *Рисунок 2 - Створення пари ключів (key pair)*
 
 **Крок 3.** Налаштував сховище (Configure storage) і запустив екземпляр. Дочекався статусу Running.
 
-![Рисунок 3](img/pr5-3.png)
+<img width="952" height="192" alt="image" src="https://github.com/user-attachments/assets/10c188e3-f674-4891-9a75-71cf57a9cb94" />
+
 *Рисунок 3 - Результат створення екземпляра на AWS*
 
 **Крок 4.** Отримав пароль адміністратора: **Actions → Security → Get Windows password**, завантажив файл `.pem` через **Upload private key file** і натиснув **Decrypt Password**.
 
-![Рисунок 4](img/pr5-4.png)
+<img width="1204" height="194" alt="image" src="https://github.com/user-attachments/assets/092dc441-8648-434d-9645-4becc03ba9a8" />
+
 *Рисунок 4 - Отримання даних машини і розшифрованого пароля*
 
 **Крок 5.** Підключився до машини по RDP: натиснув Win+R, ввів `mstsc`, вказав Public IP машини, логін **Administrator** і розшифрований пароль.
 
-![Рисунок 5](img/pr5-5.png)
+<img width="2879" height="1620" alt="image" src="https://github.com/user-attachments/assets/8c75b2be-ba28-4a18-9a36-12b00b103bed" />
+
 *Рисунок 5 - Підключення до віртуальної машини по RDP*
 
 **Крок 6.** На робочому столі зробив зміну - встановив шпалери із зображенням, що містить мій ПІБ і номер групи «**Бокач Даніїл Олегович 121-23-2**».
 
-![Рисунок 6](img/pr5-6.png)
+<img width="2852" height="1619" alt="image" src="https://github.com/user-attachments/assets/3228d7d2-cb59-4116-9ef0-2e69fb85ed56" />
+
 *Рисунок 6 - Зміни на робочому столі віртуальної машини*
 
 **Результат роботи** (дані для підключення до створеної машини):
 
 ```
-IP: <зовнішня IP-адреса машини>
+IP: 107.21.157.209
 User: Administrator
-Password: <розшифрований пароль>
+Password: 3cH2oGYlMW(!L)hqI2L?4kg;;e@=cpBP
 ```
 
 ## Контрольні питання
